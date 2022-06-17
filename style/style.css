@@ -1,0 +1,275 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.mar-top-3 {
+  margin: 2rem 0rem;
+}
+
+.mar-top-1 {
+  margin-top: 1rem;
+}
+
+.mar {
+  margin: 0 0.5rem;
+}
+
+.padd-1 {
+  padding: 0.7rem;
+}
+
+.b-radius {
+  border-radius: 0.5rem;
+}
+
+.block {
+  display: block;
+}
+
+.none {
+  display: none;
+}
+
+.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: url(../images/school-infographic-elements-with-colorful-markers/4709656.jpg) no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Operator Mono";
+}
+body .container {
+  width: 25%;
+  min-height: 75vh;
+  background-color: #a2d9e7;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+}
+body .container .container-wrapper {
+  width: 80%;
+}
+body .container .container-wrapper .form-contianer .input-wrapper .f-number {
+  text-align: center;
+  font-size: larger;
+  font-family: "Operator Mono";
+  border: white;
+  outline: none;
+}
+body .container .container-wrapper .form-contianer .input-wrapper .l-number {
+  text-align: center;
+  font-size: larger;
+  font-family: "Operator Mono";
+  border: white;
+  outline: none;
+}
+body .container .container-wrapper .form-contianer .input-wrapper .f-number::-moz-placeholder {
+  font-family: "Operator Mono";
+  outline: none;
+}
+body .container .container-wrapper .form-contianer .input-wrapper .f-number:-ms-input-placeholder {
+  font-family: "Operator Mono";
+  outline: none;
+}
+body .container .container-wrapper .form-contianer .input-wrapper .f-number::placeholder {
+  font-family: "Operator Mono";
+  outline: none;
+}
+body .container .container-wrapper .form-contianer .input-wrapper .l-number::-moz-placeholder {
+  font-family: "Operator Mono";
+  outline: none;
+}
+body .container .container-wrapper .form-contianer .input-wrapper .l-number:-ms-input-placeholder {
+  font-family: "Operator Mono";
+  outline: none;
+}
+body .container .container-wrapper .form-contianer .input-wrapper .l-number::placeholder {
+  font-family: "Operator Mono";
+  outline: none;
+}
+body .container .container-wrapper .button-wrapper {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container .container-wrapper .button-wrapper .button {
+  font-family: "Operator Mono";
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  border: none;
+  background: rgb(227, 226, 226);
+  color: rgb(20, 105, 116);
+  transition: all 0.7s ease-in-out;
+}
+body .container .container-wrapper .button-wrapper .button:hover {
+  cursor: pointer;
+  background-color: gray;
+  color: #a2d9e7;
+}
+body .container .container-wrapper .result {
+  text-align: center;
+}
+body .container .container-wrapper .result h1 {
+  color: white;
+  border-radius: 0.3rem;
+  background-color: crimson;
+}
+body .container .container-wrapper .result p {
+  margin-top: 0.5rem;
+  font-size: 24px;
+}
+body .container .container-wrapper .reset {
+  width: 50%;
+  height: 5vh;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 8px;
+  margin-inline: auto;
+  background-color: #f7c0ec;
+  color: rgb(45, 19, 70);
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+}
+body .container .container-wrapper .reset:hover {
+  cursor: pointer;
+  background-color: #db65c4;
+  color: white;
+}
+body .container .calcu-image {
+  position: absolute;
+  top: -5%;
+  left: 43%;
+  width: 60px;
+  height: 60px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+  border-radius: 50%;
+}
+body .container .calcu-image .calc-img {
+  width: 30px;
+}
+body .modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.4s ease-in-out;
+}
+body .modal-container .modal {
+  width: 30%;
+  height: 80vh;
+  background-color: #5be5bc;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+body .modal-container .modal .divisor-1 {
+  width: 100%;
+  height: 100%;
+}
+body .modal-container .modal .divisor-1 .div-span {
+  font-size: 24px;
+  font-weight: 400;
+  color: #db65c4;
+}
+body .modal-container .modal .divisor-2 {
+  width: 100%;
+  height: 100%;
+}
+body .modal-container .modal .divisor-2 .div-span {
+  font-size: 24px;
+  font-weight: 400;
+  color: #db65c4;
+}
+body .modal-container .modal .close {
+  width: 30%;
+  padding: 0.8rem 0.7rem;
+  border: none;
+  border-radius: 0.2rem;
+  background-color: rgb(180, 177, 177);
+  margin-inline: auto;
+  font-family: "Operator Mono";
+  color: rgb(45, 19, 70);
+  transition: all 0.3s ease-in-out;
+}
+body .modal-container .modal .close:hover {
+  cursor: pointer;
+  color: white;
+  background-color: rgb(71, 69, 69);
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background: none;
+  }
+  body .container {
+    width: 95%;
+    min-height: 88vh;
+  }
+  body .container .calcu-image {
+    top: -4%;
+    left: 42%;
+    width: 45px;
+    height: 45px;
+  }
+  body .container .container-wrapper .reset {
+    padding: 4px;
+  }
+  body .modal-container .modal {
+    width: 100%;
+    height: 96vh;
+  }
+  body .modal-container .modal .divisor-1 .div-span {
+    font-size: 16px;
+  }
+  body .modal-container .modal .divisor-1 p {
+    font-size: 14px;
+  }
+  body .modal-container .modal .divisor-2 .div-span {
+    font-size: 16px;
+  }
+  body .modal-container .modal .divisor-2 p {
+    font-size: 14px;
+  }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}/*# sourceMappingURL=style.css.map */

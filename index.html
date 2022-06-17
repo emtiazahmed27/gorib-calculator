@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/images/calculator.png" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script src="./script.js" defer></script>
+    <title>Goriber Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-wrapper mar-top-3">
+        <div class="form-contianer">
+          <div class="input-wrapper mar-top-1">
+            <input
+              type="number"
+              class="w-100 f-number padd-1 b-radius"
+              placeholder="First Number"
+            />
+          </div>
+          <div class="input-wrapper mar-top-1">
+            <input
+              type="number"
+              class="w-100 l-number padd-1 b-radius"
+              placeholder="Second Number"
+            />
+          </div>
+          <div class="button-wrapper mar-top-1">
+            <button class="button plus">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+            <button class="button misnus mar">
+              <i class="fa-solid fa-minus"></i>
+            </button>
+            <button class="button mult mar">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button class="button divide mar">
+              <i class="fa-solid fa-divide mar"></i>
+            </button>
+            <button class="button divide mar">%</button>
+          </div>
+          <div class="button-wrapper mar-top-1">
+            <button class="button gcd mar">GCD</button>
+            <button class="button lcm mar">LCM</button>
+            <button class="button prime mar">isPrime</button>
+            <button class="button prime">Divisor</button>
+          </div>
+          <div class="result mar-top-1">
+            <h1>Result</h1>
+            <p class="show-result"></p>
+          </div>
+          <div class="reset mar-top-3">Reset</div>
+        </div>
+      </div>
+      <div class="calcu-image">
+        <img src="./images/calculator.png" alt="" class="calc-img" />
+      </div>
+    </div>
+    <div class="modal-container hide">
+      <div class="modal">
+        <div class="divisor-1">
+          <span class="div-span">Divisor of First Number:</span>
+          <p class="div-p-1"></p>
+        </div>
+        <div class="divisor-2">
+          <span class="div-span">Divisor of Second Number:</span>
+          <p class="div-p-2"></p>
+        </div>
+        <button class="close">close</button>
+      </div>
+    </div>
+  </body>
+</html>
